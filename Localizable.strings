@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  SwiftSwitch
+
+  Created by Pawar, Santosh-CW on 4/21/15.
+  Copyright (c) 2015 Pawar, Santosh. All rights reserved.
+*/
+
+"ON_STATE" = "The Switch is ON Now.";
+"OFF_STATE" = "The Switch is OFF Now.";

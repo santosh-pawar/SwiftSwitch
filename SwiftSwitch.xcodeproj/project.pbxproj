@@ -13,6 +13,10 @@
 		2CD35C7E1AE556CC0011D373 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD35C7D1AE556CC0011D373 /* Images.xcassets */; };
 		2CD35C811AE556CC0011D373 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD35C7F1AE556CC0011D373 /* LaunchScreen.xib */; };
 		2CD35C8D1AE556CC0011D373 /* SwiftSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD35C8C1AE556CC0011D373 /* SwiftSwitchTests.swift */; };
+		2CD35C971AE55BDB0011D373 /* SwitchONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD35C961AE55BDB0011D373 /* SwitchONViewController.swift */; };
+		2CD35C991AE55BE70011D373 /* SwitchOFFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD35C981AE55BE70011D373 /* SwitchOFFViewController.swift */; };
+		2CD35C9B1AE566A10011D373 /* LoadViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD35C9A1AE566A10011D373 /* LoadViewControllerHelper.swift */; };
+		2CD35CA31AE6F3640011D373 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CD35CA21AE6F3640011D373 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		2CD35C861AE556CC0011D373 /* SwiftSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD35C8B1AE556CC0011D373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CD35C8C1AE556CC0011D373 /* SwiftSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSwitchTests.swift; sourceTree = "<group>"; };
+		2CD35C961AE55BDB0011D373 /* SwitchONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchONViewController.swift; sourceTree = "<group>"; };
+		2CD35C981AE55BE70011D373 /* SwitchOFFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchOFFViewController.swift; sourceTree = "<group>"; };
+		2CD35C9A1AE566A10011D373 /* LoadViewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewControllerHelper.swift; sourceTree = "<group>"; };
+		2CD35CA21AE6F3640011D373 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 			children = (
 				2CD35C761AE556CC0011D373 /* AppDelegate.swift */,
 				2CD35C781AE556CC0011D373 /* ViewController.swift */,
+				2CD35C9A1AE566A10011D373 /* LoadViewControllerHelper.swift */,
+				2CD35C961AE55BDB0011D373 /* SwitchONViewController.swift */,
+				2CD35C981AE55BE70011D373 /* SwitchOFFViewController.swift */,
 				2CD35C7A1AE556CC0011D373 /* Main.storyboard */,
 				2CD35C7D1AE556CC0011D373 /* Images.xcassets */,
 				2CD35C7F1AE556CC0011D373 /* LaunchScreen.xib */,
@@ -90,6 +101,7 @@
 		2CD35C741AE556CC0011D373 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CD35CA21AE6F3640011D373 /* Localizable.strings */,
 				2CD35C751AE556CC0011D373 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD35CA31AE6F3640011D373 /* Localizable.strings in Resources */,
 				2CD35C7C1AE556CC0011D373 /* Main.storyboard in Resources */,
 				2CD35C811AE556CC0011D373 /* LaunchScreen.xib in Resources */,
 				2CD35C7E1AE556CC0011D373 /* Images.xcassets in Resources */,
@@ -212,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD35C991AE55BE70011D373 /* SwitchOFFViewController.swift in Sources */,
 				2CD35C791AE556CC0011D373 /* ViewController.swift in Sources */,
 				2CD35C771AE556CC0011D373 /* AppDelegate.swift in Sources */,
+				2CD35C971AE55BDB0011D373 /* SwitchONViewController.swift in Sources */,
+				2CD35C9B1AE566A10011D373 /* LoadViewControllerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				2CD35C921AE556CC0011D373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CD35C931AE556CC0011D373 /* Build configuration list for PBXNativeTarget "SwiftSwitchTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				2CD35C951AE556CC0011D373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
